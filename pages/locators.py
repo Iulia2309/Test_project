@@ -16,5 +16,9 @@ class ProductPageLocators():
     PRICE_IN_BASKET = (By.XPATH, "/html/body/div/div/div/div/div/p/strong")
     SUCCESS_MESSAGE = (By.XPATH, "/html/body/div/div/div/div/div")
 
+class BasePageLocators():
+    LOGIN_LINK = (By.CSS_SELECTOR, "#login_link")
+    LOGIN_LINK_INVALID = (By.CSS_SELECTOR, "#login_link_inc")
+
     
    
