@@ -1,6 +1,5 @@
 from .base_page import BasePage
 from .locators import BasketPageLocators
-#from selenium.common.exceptions import NoSuchElementException
 
 class BasketPage(BasePage):
     def should_be_empty_basket(self):
@@ -12,6 +11,6 @@ class BasketPage(BasePage):
            "Basket is not empty, but should be"
 
     def shold_be_empty_basket_text(self):
-        assert self.is_element_present(*BasketPageLocators.EMPTY_BASKET), \
+        assert self.is_element_present(*BasketPageLocators.EMPTY_BASKET_MESSAGE), \
                "Text is not present, but should be"
    
